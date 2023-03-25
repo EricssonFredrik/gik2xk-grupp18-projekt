@@ -8,8 +8,8 @@ function CartList({ product }) {
 					<ProductItemSmall product={product} />
 				</Grid>
 				<Grid item xs={12} md={6}>
-					<p>Antal: {product.amount}</p>
-					<p>Pris: {product.amount * product.price}</p>
+					<p>Antal: {product.cartRow.amount}</p>
+					<p>Pris: {product.cartRow.amount * product.price}</p>
 				</Grid>
 			</Grid>
 		</>

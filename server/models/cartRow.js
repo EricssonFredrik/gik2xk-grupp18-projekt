@@ -12,7 +12,7 @@ module.exports = (sequelize, Datatypes) => {
       primaryKey: true,
       uniqueKeys: {
         cartProduct_unique: {
-          fields: ['cartId', 'productId'],
+          fields: ['cart_id', 'product_id'],
         },
       },
       underscored: true,
