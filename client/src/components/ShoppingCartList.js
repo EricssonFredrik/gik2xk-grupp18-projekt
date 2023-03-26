@@ -13,6 +13,14 @@ function ShoppingCartList() {
     fetchCart();
   }, []);
 
+  function calculatePriceTotal(products) {
+    let priceTotal = 0;
+    for (let i = 0; i < products.length; i++) {
+      priceTotal += products[i].price * products[i].cartRow.amount;
+    }
+    return priceTotal;
+  }
+
   return (
     <ul>
       {cart.products?.map((product) => (
@@ -20,7 +28,9 @@ function ShoppingCartList() {
           <CartList product={product} />
         </div>
       ))}
-      {cart.products && <p>Total: {cart.priceTotal}</p>}
+       {cart.products && (
+        <p>Total: {calculatePriceTotal(cart.products)}</p>
+    )}
     </ul>
   );
 }

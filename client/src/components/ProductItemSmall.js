@@ -10,10 +10,10 @@ function ProductItemSmall({ product }) {
           <Link to={`/products/${product.id}`}>{product.title}</Link>
         </Typography>
         <div>
-          <img alt={product.title} height="50" width="50" src={product.imageUrl} />
+          <img alt={product.title} height="100" width="100" src={product.imageUrl} />
         </div>
         <div>
-          <p>{product.price}</p>
+          <p>Pris: {product.price}kr</p>
         </div>
 
       </div>

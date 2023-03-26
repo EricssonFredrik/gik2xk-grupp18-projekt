@@ -30,7 +30,6 @@ const constraints = {
     }
   }  
 
-
 async function getAll() {
     try {
         const allProducts = await db.product.findAll({include: [db.rating]});
@@ -102,7 +101,6 @@ async function update(product, id) {
     }
 }
 
-
 async function destroy(id) {
   if (!id) {
     return createResponseError(422, 'Id är obligatoriskt');
@@ -125,7 +123,6 @@ module.exports = {
     destroy,
     addRating,
     getRating,
-
 };
 
 

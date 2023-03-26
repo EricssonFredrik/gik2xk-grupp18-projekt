@@ -18,8 +18,8 @@ function App() {
       <AppBar position="static">
         <Toolbar>
           <Box sx={{ flexGrow: 1 }}>
-            <Typography variant="h3">
-              <Link to="/">Frasses e-handel</Link>
+            <Typography variant="h1" >
+              <Link  to="/">Frasses e-handel</Link>
             </Typography>
           </Box>
           <Typography variant="h6" sx={{ marginRight: '1rem' }}>
